@@ -23,14 +23,16 @@
 3. actions: (3213,1000,3); rewards: (3213,1000,1) ....
 4. actions and observations are normalized into [-1,1]
 5. load dataset:
+   <pre> ''' python
    import numpy as np
    data = np.load('processed_data/hopper-medium-expert-v2_processed.npz')
-6. observations = data['observations']     
+   </pre>
+7. observations = data['observations']     
    actions = data['actions']               
    rewards = data['rewards']              
    path_lengths = data['path_lengths']
    ...
-7. Normalization parameters:
+8. Normalization parameters:
    obs_mins = data['normalizer_mins_observations']
    obs_maxs = data['normalizer_maxs_observations']
    act_mins = data['normalizer_mins_actions']
