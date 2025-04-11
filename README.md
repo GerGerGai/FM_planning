@@ -27,13 +27,17 @@
    import numpy as np
    data = np.load('processed_data/hopper-medium-expert-v2_processed.npz')
    </pre>
-7. observations = data['observations']     
+7.<pre>
+   observations = data['observations']     
    actions = data['actions']               
    rewards = data['rewards']              
    path_lengths = data['path_lengths']
    ...
-8. Normalization parameters:
+   </pre>
+9. Normalization parameters:
+<pre>
    obs_mins = data['normalizer_mins_observations']
    obs_maxs = data['normalizer_maxs_observations']
    act_mins = data['normalizer_mins_actions']
    act_maxs = data['normalizer_maxs_actions']
+</pre>
